@@ -1,0 +1,71 @@
+.title-bar{
+    position: fixed;
+    z-index: 9;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0 ;
+    font-size: large;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}   
+
+body{
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.title-cad{
+    margin-top: 60px;
+    text-align: center;   
+}
+
+.info-cad{
+    text-align: center
+}
+
+.item-cad{
+    width: 80%; 
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.item-cad label, .item-cad input{
+    width: 50%;
+    margin: 5px 0;
+}
+
+
+input, button{
+    border-radius: 5px;
+}
+
+.botao{
+    font-size: 1.2em;
+    background-color: #1764d6;
+    border: 0;
+    margin-bottom: 1em;
+    color: white;
+    padding: 0.2em, 0.6em;
+    box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
+    text-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
+    position: relative;
+    top: 20px;
+    transform: translate(-50%,-50%);
+   
+}
+
+.botao:hover{
+    background-color: #a5dce6;
+    box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
+    text-shadow: none;
+}

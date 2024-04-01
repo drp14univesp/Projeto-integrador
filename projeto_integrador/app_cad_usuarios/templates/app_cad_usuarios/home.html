@@ -1,0 +1,51 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <title>Cadastro</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  </head>
+  <body>
+    <nav>
+        <div class="title-bar" >
+          <span >Cadastro de usuário</span>
+        </div>
+      </nav>
+    <h1 class="title-cad">Cadastre o usuário</h1>
+    <div class="info-cad" id="name">Complete suas informações: </div>
+    <div class="item-cad">
+        <label>Nome: </label>
+        <input type="text" name="name" id="nome" required>
+    </div>
+    <div class="item-cad">
+        <label>Sobrenome: </label>
+        <input type="text" name="sobrenome" id="sobrenome" required>
+    </div>
+    <div class="item-cad">
+        <label>Email: </label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div class="item-cad">
+        <label>Endereço: </label>
+        <input type="text" name="Endereço" id="Endereço" required>
+    </div>
+    <div class="item-cad">
+        <label>CEP: </label>
+        <input type="number" name="name" id="Endereço" required>
+    </div>
+    <div class="item-cad">
+        <label>Condominio: </label>
+        <input type="text" name="condominio" id="condominio" required>
+    </div>
+
+   <button class="botao" type="submit">Concluido</button>
+
+    
+    
+ 
+  </body>
+</html>
