@@ -8,40 +8,51 @@
     padding: 10px 0 ;
     font-size: large;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background-color: #44dbe0;
+    color: #FFE;
+    font-size: 25px;
+
 }   
 
 body{
     background-color: #f0f8ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding-top: 20px;
+    
 }
 
 .title-cad{
     margin-top: 60px;
     text-align: center;   
-}
-
-.info-cad{
-    text-align: center
-}
-
-.item-cad{
-    width: 80%; 
-    margin: 5px 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    font-size: xx-large;
     
 }
 
-.item-cad label, .item-cad input{
-    width: 50%;
-    margin: 5px 0;
+.info-cad{
+    text-align: center;
+    font-family: 'serif';
+    font-size: 25px;
+}
+
+.item-cad{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    text-align: center;
+    margin-right: 0;
+
+}
+
+.item-cad input {
+    margin: 5px;
+    margin-left: 0%;
+    width: 22em;
+}
+
+
+.item-cad label{
+    margin-right: 0;
+    display: flex;
+
 }
 
 
@@ -51,17 +62,17 @@ input, button{
 
 .botao{
     font-size: 1.2em;
-    background-color: #1764d6;
+    background-color: #44dbe0;
     border: 0;
-    margin-bottom: 1em;
+    margin-top: 30px;
     color: white;
-    padding: 0.2em, 0.6em;
-    box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
-    text-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
-    position: relative;
-    top: 20px;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 2);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 2);  
     transform: translate(-50%,-50%);
-   
+    margin-left: 50%;
+    text-decoration: none;
+     
 }
 
 .botao:hover{
@@ -69,3 +80,48 @@ input, button{
     box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
     text-shadow: none;
 }
+
+h1{
+    font-family: 'Courier New';
+    font-size: 30px;
+}
+
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 50px; 
+    }
+    
+    /* Estiliza as células da tabela */
+    td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    /* Estiliza o cabeçalho da tabela */
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #44dbe0;
+        color: white;
+        position: inherit;
+    }
+
+    
+    
+    .botao-exibir-usuarios {
+        font-size: 1.2em;
+        background-color: #1150ad; /* Escolha a cor que preferir */
+        border: 0;
+        margin-top: 30px;
+        color: white;
+        padding: 0.4em 0.8em;
+        box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+        text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+        transform: translate(-50%, -50%);
+        margin-left: 44.5%;
+        border-radius: 8px;
+        text-decoration: none;
+    }

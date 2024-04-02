@@ -1,0 +1,35 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<nav>
+    <div class="title-bar" >
+      <span >Projeto Integrador</span>
+    </div>
+  </nav>
+
+<div class="container">
+    <table>
+        <tr>
+           <th>Id</th>
+           <th>Nome</th>
+           <th>email</th>
+           <th>endereço</th>
+           <th>cep</th>
+           <th>condominio</th>
+        </tr>
+        {% for usuario in usuarios%}
+        <tr>
+            <td>{{ usuario.id_usuario}}</td>
+            <td>{{ usuario.nome}}</td>
+            <td>{{ usuario.email}}</td>
+            <td>{{ usuario.endereco}}</td>
+            <td>{{ usuario.cep}}</td>
+            <td>{{ usuario.condominio}}</td>
+        </tr> 
+        {% endfor %}
+    </table>
+</div>
+<br>
+<br>
+<a href="/" class="botao">Home</a>
