@@ -1,0 +1,26 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<div class="container">
+    <table>
+        <tr>
+           <th>Id</th>
+           <th>Nome</th>
+           <th>email</th>
+           <th>endereço</th>
+           <th>cep</th>
+           <th>condominio</th>
+        </tr>
+        {% for usuario in usuarios%}
+        <tr>
+            <td>{{ usuario.id}}</td>
+            <td>{{ usuario.nome}}</td>
+            <td>{{ usuario.email}}</td>
+            <td>{{ usuario.endereco}}</td>
+            <td>{{ usuario.cep}}</td>
+            <td>{{ usuario.condominio}}</td>
+        </tr> 
+        {% endfor %}
+    </table>
+</div>

@@ -12,12 +12,7 @@
 
 body{
     background-color: #f0f8ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh;
-    padding-top: 20px;
+    
 }
 
 .title-cad{
@@ -30,18 +25,26 @@ body{
 }
 
 .item-cad{
-    width: 80%; 
-    margin: 5px 0;
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    
+    margin-top: 5px;
+    text-align: center;
+    margin-right: 0;
+
 }
 
-.item-cad label, .item-cad input{
-    width: 50%;
-    margin: 5px 0;
+.item-cad input {
+    margin: 5px;
+    margin-left: 0%;
+    width: 22em;
+}
+
+
+.item-cad label{
+    margin-right: 0;
+    display: flex;
+
 }
 
 
@@ -51,16 +54,16 @@ input, button{
 
 .botao{
     font-size: 1.2em;
-    background-color: #1764d6;
+    background-color: #05285e;
     border: 0;
-    margin-bottom: 1em;
+    margin-top: 30px;
     color: white;
-    padding: 0.2em, 0.6em;
-    box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
-    text-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
-    position: relative;
-    top: 20px;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 2);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 2);  
     transform: translate(-50%,-50%);
+    margin-left: 50%;
+    
    
 }
 
@@ -69,3 +72,29 @@ input, button{
     box-shadow: 2px, 2px, 2px rgb(0, 0, 0, 2);
     text-shadow: none;
 }
+
+h1{
+    font-family: 'Courier New';
+    font-size: 30px;
+}
+
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    /* Estiliza as células da tabela */
+    td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    /* Estiliza o cabeçalho da tabela */
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #138ead;
+        color: white;
+    }
