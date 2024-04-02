@@ -22,3 +22,6 @@ def usuario_view(request):
 # retornar os dados
     return render(request,'usuarios/usuarios.html', usuarios)
 
+def exibir_usuarios(request):
+    usuarios = Usuario.objects.all()
+    return render(request, 'usuarios/exibir_usuarios.html', {'usuarios': usuarios})

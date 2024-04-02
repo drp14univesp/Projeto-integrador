@@ -2,6 +2,12 @@
 
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
+<nav>
+    <div class="title-bar" >
+      <span >Projeto Integrador</span>
+    </div>
+  </nav>
+
 <div class="container">
     <table>
         <tr>
@@ -14,7 +20,7 @@
         </tr>
         {% for usuario in usuarios%}
         <tr>
-            <td>{{ usuario.id}}</td>
+            <td>{{ usuario.id_usuario}}</td>
             <td>{{ usuario.nome}}</td>
             <td>{{ usuario.email}}</td>
             <td>{{ usuario.endereco}}</td>
@@ -24,3 +30,6 @@
         {% endfor %}
     </table>
 </div>
+<br>
+<br>
+<a href="/" class="botao">Home</a>
