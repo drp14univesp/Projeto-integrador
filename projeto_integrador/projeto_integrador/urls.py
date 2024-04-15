@@ -5,6 +5,8 @@ from app_cad_usuarios import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('usuario/', views.usuario_view, name='listagem_usuarios'),
+    path('usuarios/', views.usuario_view, name='listagem_usuarios'),
     path('exibir_usuarios/', views.exibir_usuarios, name='exibir_usuarios'),
+    path('usuario/delete/<int:id_usuario>/', views.delete_usuario, name='delete_usuario'),
 ]
+

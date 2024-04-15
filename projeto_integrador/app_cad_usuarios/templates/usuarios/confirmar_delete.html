@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmar Exclusão</title>
+ 
+</head>
+<body>
+    <div class="container">
+        <h2>Confirmar Exclusão</h2>
+        <p>Tem certeza de que deseja excluir o usuário "{{ usuario.nome }}"?</p>
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="submit" value="Confirmar" class="btn btn-danger"/>
+            <a href="{% usuarios/exibir_usuarios.html  %}" class="btn btn-secondary">Cancelar</a>
+        </form>
+    </div>
+</body>
+</html>
