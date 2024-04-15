@@ -3,29 +3,37 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 <nav>
-    <div class="title-bar" >
-      <span >Projeto Integrador</span>
+    <div class="title-bar">
+      <span>Projeto Integrador</span>
     </div>
-  </nav>
+</nav>
 
 <div class="container">
     <table>
         <tr>
-           <th>Id</th>
+           <th>ID</th>
            <th>Nome</th>
-           <th>email</th>
-           <th>endereço</th>
-           <th>cep</th>
-           <th>condominio</th>
+           <th>Email</th>
+           <th>Endereço</th>
+           <th>CEP</th>
+           <th>Condomínio</th>
+           <th>Ações</th> 
         </tr>
-        {% for usuario in usuarios%}
+        {% for usuario in usuarios %}
         <tr>
-            <td>{{ usuario.id_usuario}}</td>
-            <td>{{ usuario.nome}}</td>
-            <td>{{ usuario.email}}</td>
-            <td>{{ usuario.endereco}}</td>
-            <td>{{ usuario.cep}}</td>
-            <td>{{ usuario.condominio}}</td>
+            <td>{{ usuario.id_usuario }}</td>
+            <td>{{ usuario.nome }}</td>
+            <td>{{ usuario.email }}</td>
+            <td>{{ usuario.endereco }}</td>
+            <td>{{ usuario.cep }}</td>
+            <td>{{ usuario.condominio }}</td>
+            <td>
+               
+               <form action="{% url 'delete_usuario' usuario.id_usuario %}" method="post">
+                 {% csrf_token %}
+                 <input type="submit" value="Excluir" class="botao-deletar" onclick="return confirm('Tem certeza que deseja deletar este usuário?');">
+               </form>
+            </td>
         </tr> 
         {% endfor %}
     </table>

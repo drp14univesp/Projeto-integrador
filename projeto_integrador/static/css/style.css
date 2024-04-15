@@ -81,6 +81,22 @@ input, button{
     text-shadow: none;
 }
 
+.botao-administrar-usuarios{
+    font-size: 1.2em;
+    background-color: #1150ad; /* Escolha a cor que preferir */
+    border: 0;
+    margin-top: 60px;
+    color: white;
+    padding: 0.4em 0.8em;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    margin-left: 44.5%;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-inline-start: auto;
+    }
+
 h1{
     font-family: 'Courier New';
     font-size: 30px;
@@ -109,19 +125,43 @@ table {
         position: inherit;
     }
 
+.botao-deletar {
+        display: inline-block; /* ou 'block', dependendo do layout desejado */
+        background-color: #f44336; /* cor de fundo para o botão de deletar */
+        color: white; /* cor do texto para o botão de deletar */
+        padding: 5px 10px; /* espaçamento interno do botão */
+        margin: 5px; /* margem em torno do botão */
+        border: none; /* remove a borda padrão do botão */
+        cursor: pointer; /* muda o cursor para indicar que é clicável */
+           
+        }
+
     
     
-    .botao-exibir-usuarios {
-        font-size: 1.2em;
-        background-color: #1150ad; /* Escolha a cor que preferir */
-        border: 0;
-        margin-top: 30px;
-        color: white;
-        padding: 0.4em 0.8em;
-        box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
-        text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
-        transform: translate(-50%, -50%);
-        margin-left: 44.5%;
-        border-radius: 8px;
-        text-decoration: none;
+.botao-exibir-usuarios {
+    font-size: 1.2em;
+    background-color: #1150ad; /* Escolha a cor que preferir */
+    border: 0;
+    margin-top: 30px;
+    color: white;
+    padding: 0.4em 0.8em;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%);
+    margin-left: 37%;
+    border-radius: 8px;
+    text-decoration: none;
     }
+
+    
+.botao-deletar {
+    display: inline-block; /* ou 'block', dependendo do layout desejado */
+    background-color: #f44336; /* cor de fundo para o botão de deletar */
+    color: white; /* cor do texto para o botão de deletar */
+    padding: 5px 10px; /* espaçamento interno do botão */
+    margin: 5px; /* margem em torno do botão */
+    border: none; /* remove a borda padrão do botão */
+    cursor: pointer; /* muda o cursor para indicar que é clicável */
+       
+    }
+    

@@ -3,30 +3,34 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 <nav>
-    <div class="title-bar" >
-      <span >Projeto Integrador</span>
+    <div class="title-bar">
+      <span>Projeto Integrador</span>
     </div>
-  </nav>
+</nav>
 
-  <h2>Usuários</h2>
-  <table>
-    <tr>
-      <th>Nome</th>
-      <th>Email</th>
-      <th>Endereço</th>
-      <th>CEP</th>
-      <th>Condomínio</th>
-    </tr>
-    {% for usuario in usuarios %}
-    <tr>
-      <td>{{ usuario.nome }}</td>
-      <td>{{ usuario.email }}</td>
-      <td>{{ usuario.endereco }}</td>
-      <td>{{ usuario.cep }}</td>
-      <td>{{ usuario.condominio }}</td>
-    </tr>
+<h2>Usuários</h2>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nome</th>
+    <th>Email</th>
+    <th>Endereço</th>
+    <th>CEP</th>
+    <th>Condomínio</th>
+  </tr>
+  {% for usuario in usuarios %}
+  <tr>
+    <td>{{ usuario.id_usuario }}</td>
+    <td>{{ usuario.nome }}</td>
+    <td>{{ usuario.email }}</td>
+    <td>{{ usuario.endereco }}</td>
+    <td>{{ usuario.cep }}</td>
+    <td>{{ usuario.condominio }}</td> 
+
+  </tr>
   {% endfor %}
-  </table>
-  <br>
-  <br>
-  <a href="/" class="botao">Home</a>
+</table>
+<br>
+<br>
+<a href="/" class="botao">Home</a>
+
