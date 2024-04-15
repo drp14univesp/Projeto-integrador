@@ -23,14 +23,13 @@ def usuario_view(request):
 
 def exibir_usuarios(request):
     usuarios = Usuario.objects.all()
-    print(usuarios)
     return render(request, 'usuarios/exibir_usuarios.html', {'usuarios': usuarios})
 
 def delete_usuario(request, id_usuario):
-    usuario = get_object_or_404(Usuario, id=id_usuario)
+    usuario = get_object_or_404(Usuario, id_usuario = id_usuario)
     if request.method == 'POST':
         usuario.delete()
         
-        return redirect(reverse('exibir_usuarios'))
+        return redirect(reverse('listagem_usuarios'))
     
     return render(request, 'usuarios/confirmar_delete.html', {'usuario': usuario})
