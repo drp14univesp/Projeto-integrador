@@ -9,7 +9,7 @@ def usuario_view(request):
     usuarios = Usuario.objects.all()
 
     if request.method == 'POST':
-        # Criação de um novo usuário
+        
         novo_usuario = Usuario()
         novo_usuario.nome = request.POST.get('nome')
         novo_usuario.email = request.POST.get('email')
@@ -33,3 +33,18 @@ def delete_usuario(request, id_usuario):
         return redirect(reverse('listagem_usuarios'))
     
     return render(request, 'usuarios/confirmar_delete.html', {'usuario': usuario})
+
+def atualizar_usuario(request, id_usuario):
+    usuario = get_object_or_404(Usuario, id_usuario=id_usuario)
+    
+    if request.method == 'POST':
+        usuario.nome = request.POST.get('nome', usuario.nome)
+        usuario.email = request.POST.get('email', usuario.email)
+        usuario.endereco = request.POST.get('endereco', usuario.endereco)
+        usuario.cep = request.POST.get('cep', usuario.cep)
+        usuario.condominio = request.POST.get('condominio', usuario.condominio)
+        usuario.save()
+        
+        return redirect('listagem_usuarios')
+    
+    return render(request, 'usuarios/atualizar_usuario.html', {'usuario': usuario})

@@ -28,7 +28,11 @@
             <td>{{ usuario.cep }}</td>
             <td>{{ usuario.condominio }}</td>
             <td>
-               
+              <a href="{% url 'atualizar_usuario' usuario.id_usuario %}">
+                <button class="botao-atualizar" type="button">Atualizar</button>
+            </a>
+            
+
                <form action="{% url 'delete_usuario' usuario.id_usuario %}" method="post">
                  {% csrf_token %}
                  <input type="submit" value="Excluir" class="botao-deletar" onclick="return confirm('Tem certeza que deseja deletar este usuário?');">
